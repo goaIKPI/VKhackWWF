@@ -14,7 +14,7 @@ import com.vk.api.sdk.auth.VKAuthCallback
 import com.vk.api.sdk.auth.VKScope
 import com.vk.api.sdk.requests.VKRequest
 import kotlinx.android.synthetic.main.activity_choose_categories.*
-import kotlinx.android.synthetic.main.activity_main.*
+
 import org.jetbrains.anko.find
 import org.jetbrains.anko.toast
 
@@ -22,35 +22,32 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maaain)
+        setContentView(R.layout.open_item_projects)
+
+
 //        setSupportActionBar(findViewById(R.id.toolbar))
 //        setSupportActionBar(findViewById(R.id.toolbar2))
 //        rvCategories.layoutManager = GridLayoutManager(this, 2)
 //        rvCategories.adapter = CategoryAdapter()
-        VK.initialize(this)
-
-        VK.login(this, arrayListOf(VKScope.WALL, VKScope.PHOTOS, VKScope.FRIENDS, VKScope.GROUPS))
+//        VK.initialize(this)
+//
+//        VK.login(this, arrayListOf(VKScope.WALL, VKScope.PHOTOS, VKScope.FRIENDS, VKScope.GROUPS))
 
 
     }
 
-    fun getFriend() {
-        val api
-    }
-
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        val callback = object: VKAuthCallback {
-            override fun onLogin(token: VKAccessToken) {
-                toast("Authorized")
-            }
-
-            override fun onLoginFailed(errorCode: Int) {
-                toast("Something")
-            }
-        }
-        if (data == null || !VK.onActivityResult(requestCode, resultCode, data, callback)) {
-            super.onActivityResult(requestCode, resultCode, data)
-        }
-    }
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        val callback = object: VKAuthCallback {
+//            override fun onLogin(token: VKAccessToken) {
+//                toast("Authorized")
+//            }
+//
+//            override fun onLoginFailed(errorCode: Int) {
+//                toast("Something")
+//            }
+//        }
+//        if (data == null || !VK.onActivityResult(requestCode, resultCode, data, callback)) {
+//            super.onActivityResult(requestCode, resultCode, data)
+//        }
+//    }
 }
