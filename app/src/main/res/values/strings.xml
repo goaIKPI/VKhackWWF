@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">vhHack</string>
+    <string name="choose_category_string">Выберите направление в которое вы хотите пожертвовать:</string>
+    <string name="confirn_categories_string">Выбрать</string>
+    <string name="news_toolbar_string">Новости</string>
+    <string name="fonds_toolbar_string">Фонды</string>
+    <string name="projects_toolbar_string">Проекты</string>
+    <integer name="com_vk_sdk_AppId">7150731</integer>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
