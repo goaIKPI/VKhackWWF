@@ -16,6 +16,8 @@
 		91D4D0C0233EECD400163DD8 /* LentaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4D0BF233EECD400163DD8 /* LentaViewController.swift */; };
 		91D4D0C3233EED9600163DD8 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4D0C2233EED9600163DD8 /* ProjectTableViewCell.swift */; };
 		91D4D0C5233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4D0C4233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift */; };
+		91D4D0C8233F0FF300163DD8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4D0C7233F0FF300163DD8 /* ProjectViewController.swift */; };
+		91D4D0CA233F114E00163DD8 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4D0C9233F114E00163DD8 /* ProgressView.swift */; };
 		9EC5511B110FAAE6C4B09C6F /* Pods_WWF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7DFB2637BB1879CA34D5DF /* Pods_WWF.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		91D4D0BF233EECD400163DD8 /* LentaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentaViewController.swift; sourceTree = "<group>"; };
 		91D4D0C2233EED9600163DD8 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		91D4D0C4233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FondAndNewsTableViewCell.swift; sourceTree = "<group>"; };
+		91D4D0C7233F0FF300163DD8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		91D4D0C9233F114E00163DD8 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		C1AFD4EFB5C9676C8BDB5949 /* Pods-WWF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWF.release.xcconfig"; path = "Target Support Files/Pods-WWF/Pods-WWF.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 		91D4D0B5233EBBEF00163DD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91D4D0C6233F0FDB00163DD8 /* Project */,
 				91D4D0BE233EEC9700163DD8 /* Lenta */,
 				91D4D0BD233EEC9400163DD8 /* Top */,
 			);
@@ -125,6 +130,7 @@
 		91D4D0B8233EBC0600163DD8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				91D4D0C9233F114E00163DD8 /* ProgressView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -154,6 +160,14 @@
 				91D4D0C4233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		91D4D0C6233F0FDB00163DD8 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				91D4D0C7233F0FF300163DD8 /* ProjectViewController.swift */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,8 @@
 				916EED82233E7C48007E7445 /* AppDelegate.swift in Sources */,
 				91D4D0BC233EBD2C00163DD8 /* TopDestCollectionViewCell.swift in Sources */,
 				91D4D0C0233EECD400163DD8 /* LentaViewController.swift in Sources */,
+				91D4D0CA233F114E00163DD8 /* ProgressView.swift in Sources */,
+				91D4D0C8233F0FF300163DD8 /* ProjectViewController.swift in Sources */,
 				91D4D0C5233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
