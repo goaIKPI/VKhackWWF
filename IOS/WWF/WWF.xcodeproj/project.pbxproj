@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910672D8233F5EAA00234D00 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672D7233F5EAA00234D00 /* AuthViewController.swift */; };
+		910672DC233F671900234D00 /* FondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DB233F671900234D00 /* FondViewController.swift */; };
+		910672DE233F672300234D00 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DD233F672300234D00 /* NewsViewController.swift */; };
+		910672E0233F686E00234D00 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DF233F686E00234D00 /* Constant.swift */; };
 		916EED82233E7C48007E7445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EED81233E7C48007E7445 /* AppDelegate.swift */; };
 		916EED84233E7C48007E7445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EED83233E7C48007E7445 /* ViewController.swift */; };
 		916EED87233E7C48007E7445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916EED85233E7C48007E7445 /* Main.storyboard */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		09C6E3577A417853380DBF8F /* Pods-WWF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWF.debug.xcconfig"; path = "Target Support Files/Pods-WWF/Pods-WWF.debug.xcconfig"; sourceTree = "<group>"; };
 		2A7DFB2637BB1879CA34D5DF /* Pods_WWF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		910672D7233F5EAA00234D00 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		910672DB233F671900234D00 /* FondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FondViewController.swift; sourceTree = "<group>"; };
+		910672DD233F672300234D00 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		910672DF233F686E00234D00 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		916EED7E233E7C48007E7445 /* WWF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916EED81233E7C48007E7445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		916EED83233E7C48007E7445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		910672D6233F5E9500234D00 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				910672D7233F5EAA00234D00 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		910672D9233F66C300234D00 /* Fond */ = {
+			isa = PBXGroup;
+			children = (
+				910672DB233F671900234D00 /* FondViewController.swift */,
+			);
+			path = Fond;
+			sourceTree = "<group>";
+		};
+		910672DA233F66C900234D00 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				910672DD233F672300234D00 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		916EED75233E7C48007E7445 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +137,7 @@
 		91D4D0B5233EBBEF00163DD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				91D4D0C6233F0FDB00163DD8 /* Project */,
+				910672D6233F5E9500234D00 /* Auth */,
 				91D4D0BE233EEC9700163DD8 /* Lenta */,
 				91D4D0BD233EEC9400163DD8 /* Top */,
 			);
@@ -131,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				91D4D0C9233F114E00163DD8 /* ProgressView.swift */,
+				910672DF233F686E00234D00 /* Constant.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -147,6 +180,9 @@
 		91D4D0BE233EEC9700163DD8 /* Lenta */ = {
 			isa = PBXGroup;
 			children = (
+				91D4D0C6233F0FDB00163DD8 /* Project */,
+				910672DA233F66C900234D00 /* News */,
+				910672D9233F66C300234D00 /* Fond */,
 				91D4D0C1233EED7C00163DD8 /* Cell */,
 				91D4D0BF233EECD400163DD8 /* LentaViewController.swift */,
 			);
@@ -289,10 +325,14 @@
 				916EED84233E7C48007E7445 /* ViewController.swift in Sources */,
 				916EED82233E7C48007E7445 /* AppDelegate.swift in Sources */,
 				91D4D0BC233EBD2C00163DD8 /* TopDestCollectionViewCell.swift in Sources */,
+				910672DE233F672300234D00 /* NewsViewController.swift in Sources */,
 				91D4D0C0233EECD400163DD8 /* LentaViewController.swift in Sources */,
 				91D4D0CA233F114E00163DD8 /* ProgressView.swift in Sources */,
 				91D4D0C8233F0FF300163DD8 /* ProjectViewController.swift in Sources */,
+				910672D8233F5EAA00234D00 /* AuthViewController.swift in Sources */,
 				91D4D0C5233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift in Sources */,
+				910672DC233F671900234D00 /* FondViewController.swift in Sources */,
+				910672E0233F686E00234D00 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

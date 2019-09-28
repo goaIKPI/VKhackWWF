@@ -27,6 +27,7 @@ class LentaViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         setCornersButton()
+        Constant.Lenta.controller = self
         // Do any additional setup after loading the view.
     }
     
@@ -64,14 +65,28 @@ class LentaViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func presentProject() {
+        performSegue(withIdentifier: "presentProjectToLenta", sender: nil)
+    }
 
 }
 
 
 extension LentaViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch page{
+        case .proj:
+            performSegue(withIdentifier: "presentProjectToLenta", sender: nil)
+        case .fond:
+            performSegue(withIdentifier: "presentFondToLenta", sender: nil)
+        case .news:
+            performSegue(withIdentifier: "presentNewsToLenta", sender: nil)
+        default:
+            print("error to delegate")
+        }
+        
+    }
 }
 
 extension LentaViewController: UITableViewDataSource {
