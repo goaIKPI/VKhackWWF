@@ -2,18 +2,17 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background"
         android:gravity="center_vertical|fill_horizontal">
-        <shape android:shape="rectangle"
-            android:tint="?attr/colorControlNormal">
+        <shape android:shape="rectangle">
             <corners android:radius="30dp"/>
             <size android:height="35dp" />
-            <solid android:color="#b9f6ca" />
+            <solid android:color="#C0C0C0" />
         </shape>
     </item>
     <item android:id="@android:id/progress"
         android:gravity="center_vertical|fill_horizontal">
         <scale android:scaleWidth="100%">
             <shape android:shape="rectangle"
-                android:tint="?attr/colorControlActivated">
+                >
                 <corners android:radius="50dp"/>
                 <size android:height="35dp" />
                 <solid android:color="#009656" />

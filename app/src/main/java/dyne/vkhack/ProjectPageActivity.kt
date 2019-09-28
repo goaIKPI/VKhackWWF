@@ -7,6 +7,6 @@ class ProjectPageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fund_page_activity)
+        setContentView(R.layout.news_page_activity)
     }
 }
