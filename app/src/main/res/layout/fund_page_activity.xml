@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/project_containeer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/open_project_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/tiger_pic"
+                app:layout_constraintBottom_toBottomOf="@id/guideline17"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/open_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Теплый дом"
+                android:textSize="25sp"
+                app:layout_constraintTop_toTopOf="@id/guideline17"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="260dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_project_name" />
+
+            <TextView
+                android:id="@+id/ammount_of_donaters_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Все проекты фонда"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/view2"
+                app:layout_constraintLeft_toRightOf="@id/ammount_of_donaters_text_view"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view1" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ammount_of_donaters_text_view" />
+
+            <TextView
+                android:id="@+id/all_fund_projects2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Все проекты фонда"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@id/view3"
+                app:layout_constraintLeft_toRightOf="@id/all_fund_projects2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view2" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/all_fund_projects2" />
+
+            <TextView
+                android:id="@+id/found_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                android:text="О нас"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+
+            <TextView
+                android:id="@+id/discr_of_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/found_txt"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"
+                android:text="Some text"
+                />
+            <TextView
+                android:id="@+id/misson_of_comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                android:text="Миссия"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/discr_of_company" />
+
+            <TextView
+                android:id="@+id/misson_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/misson_of_comp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"
+                android:text="Some text"
+                />
+
+            <TextView
+                android:id="@+id/info_about_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Миссия Теплого дома - помочь неблагополучным малоимущим родителям самостостельно встать на ноги, найти жильё и работу, а детям - помочь остаться жить в родной семье (а не в детдоме или на улице)."
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/misson_text" />
+
+            <ImageView
+                android:background="@drawable/ic_language_black_24dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/info_about_company"
+                app:layout_constraintLeft_toLeftOf="@id/guideline18"/>
+
+            <TextView
+                android:id="@+id/site"
+                app:layout_constraintLeft_toRightOf="@+id/network"
+                app:layout_constraintBottom_toBottomOf="@+id/network"
+                app:layout_constraintTop_toTopOf="@+id/network"
+                android:layout_marginLeft="40dp"
+                android:text="email@email.email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:background="@drawable/ic_local_phone_black_24dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/network"
+                app:layout_constraintLeft_toLeftOf="@id/guideline18"/>
+
+            <TextView
+                android:id="@+id/number"
+                app:layout_constraintLeft_toRightOf="@+id/phone"
+                app:layout_constraintBottom_toBottomOf="@+id/phone"
+                app:layout_constraintTop_toTopOf="@+id/phone"
+                android:layout_marginLeft="40dp"
+                android:text="+7 (999) 999 99 99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:background="@drawable/ic_location_on_black_24dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/phone"
+                app:layout_constraintLeft_toLeftOf="@id/guideline18"/>
+
+            <TextView
+                android:id="@+id/adress"
+                app:layout_constraintLeft_toRightOf="@+id/map"
+                app:layout_constraintBottom_toBottomOf="@+id/map"
+                app:layout_constraintTop_toTopOf="@+id/map"
+                android:layout_marginLeft="40dp"
+                android:text="Санкт-Петербург, ул. Оружейника Фёдорова, 2 (угол с Соляным пер.)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
