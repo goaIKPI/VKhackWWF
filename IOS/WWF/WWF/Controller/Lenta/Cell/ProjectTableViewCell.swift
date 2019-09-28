@@ -29,7 +29,7 @@ class ProjectTableViewCell: UITableViewCell {
     }
     
     @IBAction func openProject(_ sender: UIButton) {
-        
+        Constant.Lenta.controller?.presentProject()
     }
     
     func update(image: UIImage, name: String, description: String) {
