@@ -1,0 +1,20 @@
+PODS:
+  - SwiftyVK (3.4.0)
+  - VK-ios-sdk (1.5.1)
+
+DEPENDENCIES:
+  - SwiftyVK
+  - VK-ios-sdk
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftyVK
+    - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  SwiftyVK: 9752f07eb25c2061168ea3018c64a0512eed1f2c
+  VK-ios-sdk: 62a10b6571fbcda0657f455fedce7fedf55b4cd0
+
+PODFILE CHECKSUM: 7f9ebe67b8ac132633c146bd4d0e2533d526a0c3
+
+COCOAPODS: 1.7.1
