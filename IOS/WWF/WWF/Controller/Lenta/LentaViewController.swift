@@ -28,32 +28,31 @@ class LentaViewController: UIViewController {
         tableView.delegate = self
         setCornersButton()
         Constant.Lenta.controller = self
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func openProject(_ sender: UIButton) {
         page = .proj
         tableView.reloadData()
-        projectButton.backgroundColor = UIColor.lightGray
-        newsButton.backgroundColor = UIColor.clear
-        fondButton.backgroundColor = UIColor.clear
+        projectButton.titleLabel!.textColor = UIColor.white
+        fondButton.titleLabel!.textColor = UIColor.black
+        newsButton.titleLabel!.textColor = UIColor.black
     }
     
     
     @IBAction func openFond(_ sender: UIButton) {
         page = .fond
-        projectButton.backgroundColor = UIColor.clear
-        newsButton.backgroundColor = UIColor.clear
-        fondButton.backgroundColor = UIColor.lightGray
+        projectButton.titleLabel!.textColor = UIColor.black
+        fondButton.titleLabel!.textColor = UIColor.white
+        newsButton.titleLabel!.textColor = UIColor.black
         tableView.reloadData()
     }
     
     @IBAction func openNews(_ sender: UIButton) {
         page = .news
         tableView.reloadData()
-        projectButton.backgroundColor = UIColor.clear
-        newsButton.backgroundColor = UIColor.lightGray
-        fondButton.backgroundColor = UIColor.clear
+        projectButton.titleLabel!.textColor = UIColor.black
+        fondButton.titleLabel!.textColor = UIColor.black
+        newsButton.titleLabel!.textColor = UIColor.white
     }
     
     /*
@@ -125,8 +124,8 @@ extension LentaViewController: UITableViewDataSource {
 
 private extension LentaViewController {
     func setCornersButton(){
-        projectButton.layer.cornerRadius = 5
-        fondButton.layer.cornerRadius = 5
-        newsButton.layer.cornerRadius = 5
+        projectButton.layer.cornerRadius = projectButton.frame.size.height/2
+        fondButton.layer.cornerRadius = fondButton.frame.size.height/2
+        newsButton.layer.cornerRadius = newsButton.frame.size.height/2
     }
 }

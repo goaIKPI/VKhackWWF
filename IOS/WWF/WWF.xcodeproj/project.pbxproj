@@ -11,6 +11,8 @@
 		910672DC233F671900234D00 /* FondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DB233F671900234D00 /* FondViewController.swift */; };
 		910672DE233F672300234D00 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DD233F672300234D00 /* NewsViewController.swift */; };
 		910672E0233F686E00234D00 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672DF233F686E00234D00 /* Constant.swift */; };
+		910672E5233F94D200234D00 /* NewsFondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672E4233F94D200234D00 /* NewsFondViewController.swift */; };
+		910672E7233F94F400234D00 /* ProjectFondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910672E6233F94F400234D00 /* ProjectFondViewController.swift */; };
 		916EED82233E7C48007E7445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EED81233E7C48007E7445 /* AppDelegate.swift */; };
 		916EED84233E7C48007E7445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EED83233E7C48007E7445 /* ViewController.swift */; };
 		916EED87233E7C48007E7445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916EED85233E7C48007E7445 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		910672DB233F671900234D00 /* FondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FondViewController.swift; sourceTree = "<group>"; };
 		910672DD233F672300234D00 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		910672DF233F686E00234D00 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		910672E4233F94D200234D00 /* NewsFondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFondViewController.swift; sourceTree = "<group>"; };
+		910672E6233F94F400234D00 /* ProjectFondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFondViewController.swift; sourceTree = "<group>"; };
 		916EED7E233E7C48007E7445 /* WWF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916EED81233E7C48007E7445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		916EED83233E7C48007E7445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		910672D9233F66C300234D00 /* Fond */ = {
 			isa = PBXGroup;
 			children = (
+				910672E3233F94BC00234D00 /* News */,
+				910672E2233F94B000234D00 /* Project */,
 				910672DB233F671900234D00 /* FondViewController.swift */,
 			);
 			path = Fond;
@@ -97,6 +103,30 @@
 			isa = PBXGroup;
 			children = (
 				910672DD233F672300234D00 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		910672E1233F6B7C00234D00 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				91D4D0BB233EBD2C00163DD8 /* TopDestCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		910672E2233F94B000234D00 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				910672E6233F94F400234D00 /* ProjectFondViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		910672E3233F94BC00234D00 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				910672E4233F94D200234D00 /* NewsFondViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -171,8 +201,8 @@
 		91D4D0BD233EEC9400163DD8 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				910672E1233F6B7C00234D00 /* Cell */,
 				916EED83233E7C48007E7445 /* ViewController.swift */,
-				91D4D0BB233EBD2C00163DD8 /* TopDestCollectionViewCell.swift */,
 			);
 			path = Top;
 			sourceTree = "<group>";
@@ -322,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D4D0C3233EED9600163DD8 /* ProjectTableViewCell.swift in Sources */,
+				910672E7233F94F400234D00 /* ProjectFondViewController.swift in Sources */,
 				916EED84233E7C48007E7445 /* ViewController.swift in Sources */,
 				916EED82233E7C48007E7445 /* AppDelegate.swift in Sources */,
 				91D4D0BC233EBD2C00163DD8 /* TopDestCollectionViewCell.swift in Sources */,
@@ -330,6 +361,7 @@
 				91D4D0CA233F114E00163DD8 /* ProgressView.swift in Sources */,
 				91D4D0C8233F0FF300163DD8 /* ProjectViewController.swift in Sources */,
 				910672D8233F5EAA00234D00 /* AuthViewController.swift in Sources */,
+				910672E5233F94D200234D00 /* NewsFondViewController.swift in Sources */,
 				91D4D0C5233EEDBD00163DD8 /* FondAndNewsTableViewCell.swift in Sources */,
 				910672DC233F671900234D00 /* FondViewController.swift in Sources */,
 				910672E0233F686E00234D00 /* Constant.swift in Sources */,

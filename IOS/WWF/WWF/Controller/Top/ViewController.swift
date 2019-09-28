@@ -15,7 +15,18 @@ class ViewController: UIViewController {
     private var selectCount = 0
     @IBOutlet weak var textConfirm: UILabel!
     
-
+    let arrayImage: [UIImage] = [UIImage(named: "culture")!,
+                                UIImage(named: "bike")!,
+                                UIImage(named: "obrz")!,
+                                UIImage(named: "social")!,
+                                UIImage(named: "obsh")!,
+                                UIImage(named: "relig")!]
+    
+    let arrayString: [String] = ["Культура", "Спорт", "Образование", "Социальные программы", "Общественные организации", "Религия"]
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -49,11 +60,11 @@ extension ViewController: UICollectionViewDataSource {
         cell.layer.shadowOpacity = 1
         cell.layer.shadowRadius = 1
         cell.layer.shadowColor = UIColor.gray.cgColor
-        cell.layer.shadowOffset = CGSize(width: 0, height: 1)
+        cell.layer.shadowOffset = CGSize(width: 0, height: 3)
         cell.clipsToBounds = false
         
         
-        cell.update(image: UIImage(named: "facebook")!, text: "Дикая природа")
+        cell.update(image: arrayImage[indexPath.row], text: arrayString[indexPath.row])
         
         
         return cell
@@ -66,8 +77,21 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let count = selectCount
         selectCount = (collectionView.cellForItem(at: indexPath) as! TopDestCollectionViewCell).selectItem(selectCount)
-        
+        if count > selectCount {
+            collectionView.cellForItem(at: indexPath)!.layer.shadowOpacity = 3
+            collectionView.cellForItem(at: indexPath)!.layer.shadowRadius = 3
+            collectionView.cellForItem(at: indexPath)!.layer.shadowColor = UIColor.gray.cgColor
+            collectionView.cellForItem(at: indexPath)!.layer.shadowOffset = CGSize(width: 0, height: 3)
+            collectionView.cellForItem(at: indexPath)!.clipsToBounds = false
+        } else {
+            collectionView.cellForItem(at: indexPath)!.layer.shadowOpacity = 3
+            collectionView.cellForItem(at: indexPath)!.layer.shadowRadius = 3
+            collectionView.cellForItem(at: indexPath)!.layer.shadowColor = UIColor(red: 1/255, green: 150/255, blue: 86/255, alpha: 1).cgColor
+            collectionView.cellForItem(at: indexPath)!.layer.shadowOffset = CGSize(width: 0, height: 3)
+            collectionView.cellForItem(at: indexPath)!.clipsToBounds = false
+        }
         textConfirm.text = "Выбрать (\(selectCount))"
         
     }

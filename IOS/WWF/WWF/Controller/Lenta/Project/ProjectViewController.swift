@@ -12,10 +12,29 @@ class ProjectViewController: UIViewController {
 
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var buttonPurchase: UIButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var buttonfield: UITextField!
+    @IBOutlet weak var buttonList: UIButton!
+    @IBOutlet weak var buttonOpen: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        bottomConstraint.constant = 500
+        buttonPurchase.layer.cornerRadius = buttonPurchase.frame.size.height/2
+        button1.layer.cornerRadius = button1.frame.size.height/2
+        button2.layer.cornerRadius = button2.frame.size.height/2
+        button3.layer.cornerRadius = button3.frame.size.height/2
+        button4.layer.cornerRadius = button4.frame.size.height/2
+        buttonfield.layer.cornerRadius = buttonfield.frame.size.height/2
+         buttonList.layer.cornerRadius = buttonList.frame.size.height/2
+        buttonOpen.layer.cornerRadius = 20
+        buttonOpen.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        buttonOpen.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
@@ -35,6 +54,22 @@ class ProjectViewController: UIViewController {
     
     @IBAction func back(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func openWindowDonat(_ sender: Any) {
+        UIView.animate(withDuration: 1){
+            self.bottomConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        }
+        
+    
+    }
+    @IBAction func closeWindowDonat(_ sender: Any) {
+        UIView.animate(withDuration: 1){
+            self.bottomConstraint.constant = 500
+            self.view.layoutIfNeeded()
+        }
     }
     /*
     // MARK: - Navigation

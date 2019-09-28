@@ -48,6 +48,7 @@ class AuthViewController: UIViewController, SwiftyVKDelegate {
         super.viewDidLoad()
         VK.setUp(appId: "7150700", delegate: self)
         buttonAuth.layer.cornerRadius = buttonAuth.frame.size.height / 2
+        
         // Do any additional setup after loading the view.
     }
     
@@ -62,6 +63,7 @@ class AuthViewController: UIViewController, SwiftyVKDelegate {
                         if self.info != nil{
                             self.performSegue(withIdentifier: "presentTabBarToAuth", sender: nil)
                         }
+                        
                         
                         // Handle an error if something went wrong
                 }

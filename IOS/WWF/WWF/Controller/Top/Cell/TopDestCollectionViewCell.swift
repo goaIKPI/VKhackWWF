@@ -15,9 +15,12 @@ class TopDestCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var select: UIImageView!
     
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        select.image = UIImage(named: "facebook")
+        select.image = UIImage(named: "select")
         select.isHidden = true
     }
     
@@ -33,6 +36,9 @@ class TopDestCollectionViewCell: UICollectionViewCell {
         } else {
             select.isHidden = true
             return count - 1
+
+            
+
         }
         
     }
