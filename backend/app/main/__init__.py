@@ -1,9 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+import vk_api
 
-from .config import config_by_name
+from .config import config_by_name, SECURE_KEY, SERVICE_KEY, APP_ID
 
+vk_session = vk_api.VkApi(token=SERVICE_KEY, app_id=APP_ID, client_secret=SECURE_KEY)
+vk = vk_session.get_api()
 db = SQLAlchemy()
 flask_bcrypt = Bcrypt()
 

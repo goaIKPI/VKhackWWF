@@ -41,3 +41,18 @@ def admin_token_required(f):
         return f(*args, **kwargs)
 
     return decorated
+
+
+def vk_login_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+
+        data, status = Auth.vk_login(request)
+        token = data.get('data')
+
+        if not token:
+            return data, status
+
+        return f(*args, **kwargs)
+
+    return decorated
