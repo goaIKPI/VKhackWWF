@@ -22,7 +22,7 @@ class ViewController: UIViewController {
                                 UIImage(named: "obsh")!,
                                 UIImage(named: "relig")!]
     
-    let arrayString: [String] = ["Культура", "Спорт", "Образование", "Социальные программы", "Общественные организации", "Религия"]
+    let arrayString: [String] = ["Культура", "Здравоохранение", "Образование", "Социальные программы", "Общественные организации", "Дикая природа"]
     
     
     

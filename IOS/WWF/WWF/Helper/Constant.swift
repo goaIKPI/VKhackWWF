@@ -14,4 +14,11 @@ class Constant {
         static var controller: LentaViewController?
     }
     
+    enum User {
+        static var info: [String:Any]?
+    }
+    enum Project {
+        static var love: [String]?
+    }
+    
 }

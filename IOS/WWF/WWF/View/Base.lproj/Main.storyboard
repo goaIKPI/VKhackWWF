@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6D-eL-coO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-966" y="16"/>
+            <point key="canvasLocation" x="-1028" y="16"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -202,7 +202,7 @@
         <!--View Controller-->
         <scene sceneID="HbX-He-CdP">
             <objects>
-                <viewController id="fNq-Mo-lN4" sceneMemberID="viewController">
+                <viewController id="fNq-Mo-lN4" customClass="LKViewController" customModule="WWF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mph-ea-vDH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,21 +260,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-5u-x2D" customClass="ProgressView" customModule="WWF" customModuleProvider="target">
-                                <rect key="frame" x="8" y="143.5" width="305" height="30"/>
+                                <rect key="frame" x="8" y="143.5" width="351" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fdE-Z1-4Ls"/>
                                 </constraints>
                                 <color key="progressTintColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAG-o7-8O3">
-                                <rect key="frame" x="329" y="143.5" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="3Jg-HX-p18"/>
-                                    <constraint firstAttribute="height" constant="30" id="86g-pH-cOh"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Image-1"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 000 руб/25 666 руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-wm-by2">
                                 <rect key="frame" x="224.5" y="121" width="134.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -285,32 +277,36 @@
                         <constraints>
                             <constraint firstItem="34N-kA-qmP" firstAttribute="trailing" secondItem="xtr-Bp-Tgf" secondAttribute="trailing" constant="16" id="A9Z-Wa-dnU"/>
                             <constraint firstItem="bwB-5u-x2D" firstAttribute="leading" secondItem="34N-kA-qmP" secondAttribute="leading" constant="8" id="BQK-Uu-Gjc"/>
-                            <constraint firstItem="AAG-o7-8O3" firstAttribute="leading" secondItem="bwB-5u-x2D" secondAttribute="trailing" constant="16" id="Bhn-xh-lTQ"/>
                             <constraint firstItem="xtr-Bp-Tgf" firstAttribute="top" secondItem="KZ6-Lw-ME6" secondAttribute="bottom" constant="16" id="Eug-Iw-RT7"/>
-                            <constraint firstItem="AAG-o7-8O3" firstAttribute="bottom" secondItem="bwB-5u-x2D" secondAttribute="bottom" id="FC6-Pd-wJx"/>
                             <constraint firstItem="2mq-wm-by2" firstAttribute="bottom" secondItem="xtr-Bp-Tgf" secondAttribute="bottom" id="RgQ-8w-AJJ"/>
                             <constraint firstItem="34N-kA-qmP" firstAttribute="trailing" secondItem="2mq-wm-by2" secondAttribute="trailing" constant="16" id="UPo-8N-pQn"/>
                             <constraint firstItem="2mq-wm-by2" firstAttribute="top" secondItem="xtr-Bp-Tgf" secondAttribute="top" id="bSQ-OO-oQE"/>
                             <constraint firstItem="bwB-5u-x2D" firstAttribute="top" secondItem="xtr-Bp-Tgf" secondAttribute="bottom" constant="8" id="cUL-26-mAV"/>
-                            <constraint firstItem="34N-kA-qmP" firstAttribute="trailing" secondItem="AAG-o7-8O3" secondAttribute="trailing" constant="16" id="cdd-wj-HBv"/>
                             <constraint firstItem="KZ6-Lw-ME6" firstAttribute="leading" secondItem="34N-kA-qmP" secondAttribute="leading" constant="16" id="ces-90-ZHS"/>
                             <constraint firstItem="34N-kA-qmP" firstAttribute="trailing" secondItem="KZ6-Lw-ME6" secondAttribute="trailing" constant="16" id="czM-2U-Vl8"/>
                             <constraint firstItem="KZ6-Lw-ME6" firstAttribute="top" secondItem="34N-kA-qmP" secondAttribute="top" constant="25" id="hVS-tV-4I9"/>
+                            <constraint firstItem="34N-kA-qmP" firstAttribute="trailing" secondItem="bwB-5u-x2D" secondAttribute="trailing" constant="16" id="o95-wa-lSV"/>
                             <constraint firstItem="xtr-Bp-Tgf" firstAttribute="leading" secondItem="34N-kA-qmP" secondAttribute="leading" constant="16" id="ooO-ll-4B5"/>
-                            <constraint firstItem="AAG-o7-8O3" firstAttribute="top" secondItem="bwB-5u-x2D" secondAttribute="top" id="yu3-i7-L6y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="34N-kA-qmP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="bAr-ZQ-fWp"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_4" id="bAr-ZQ-fWp"/>
+                    <connections>
+                        <outlet property="imageView" destination="34P-6y-Vrr" id="Jxp-UV-JyJ"/>
+                        <outlet property="name" destination="P3k-QG-Kys" id="4pA-j9-SEz"/>
+                        <outlet property="progressBare" destination="bwB-5u-x2D" id="Snd-QV-h2j"/>
+                        <outlet property="progressLabel" destination="2mq-wm-by2" id="vFd-3w-haT"/>
+                        <outlet property="raiting" destination="FZV-je-0Xz" id="vfo-MR-qjj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yzA-sA-FLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1941.5999999999999" y="1133.8830584707648"/>
         </scene>
-        <!--View Controller-->
+        <!--Scoreboard View Controller-->
         <scene sceneID="jql-GA-FjD">
             <objects>
-                <viewController id="vGq-Xz-nNQ" sceneMemberID="viewController">
+                <viewController id="vGq-Xz-nNQ" customClass="ScoreboardViewController" customModule="WWF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apJ-0U-KFH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,37 +323,37 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7Py-Vz-IFj">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoreCell" rowHeight="59" id="7Py-Vz-IFj" customClass="ScoreTableViewCell" customModule="WWF" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Py-Vz-IFj" id="Auz-Lv-wCr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 ST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4D-dD-oqL">
-                                                    <rect key="frame" x="15" y="11" width="28" height="22"/>
+                                                    <rect key="frame" x="15" y="11.5" width="28" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="28" id="twc-v4-ZbL"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kIX-sk-Uce">
-                                                    <rect key="frame" x="51" y="7" width="30" height="30"/>
+                                                    <rect key="frame" x="51" y="5.5" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="ULw-Qz-fcf"/>
-                                                        <constraint firstAttribute="height" constant="30" id="hkt-tr-uaq"/>
+                                                        <constraint firstAttribute="width" constant="50" id="ULw-Qz-fcf"/>
+                                                        <constraint firstAttribute="height" constant="50" id="hkt-tr-uaq"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Тимирбулатов Максим" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVy-tB-hX8">
-                                                    <rect key="frame" x="93" y="11" width="189" height="22"/>
+                                                    <rect key="frame" x="113" y="11.5" width="149" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="122 394 руб" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-at-af9">
-                                                    <rect key="frame" x="290" y="11" width="70" height="22"/>
+                                                    <rect key="frame" x="270" y="11.5" width="90" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -372,13 +368,21 @@
                                                 <constraint firstItem="GpX-at-af9" firstAttribute="trailing" secondItem="Auz-Lv-wCr" secondAttribute="trailingMargin" id="e3Z-qG-sCO"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="OVy-tB-hX8" secondAttribute="bottom" id="fUN-W9-2U4"/>
                                                 <constraint firstItem="GpX-at-af9" firstAttribute="top" secondItem="Auz-Lv-wCr" secondAttribute="topMargin" id="hBb-oE-txo"/>
+                                                <constraint firstItem="kIX-sk-Uce" firstAttribute="top" secondItem="Auz-Lv-wCr" secondAttribute="top" constant="5" id="jhc-n4-RjQ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="GpX-at-af9" secondAttribute="bottom" id="kqF-xa-Xlm"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="j4D-dD-oqL" secondAttribute="bottom" id="n5k-hk-2Yv"/>
                                                 <constraint firstItem="GpX-at-af9" firstAttribute="leading" secondItem="OVy-tB-hX8" secondAttribute="trailing" constant="8" id="syu-By-bnb"/>
                                                 <constraint firstItem="j4D-dD-oqL" firstAttribute="leading" secondItem="Auz-Lv-wCr" secondAttribute="leadingMargin" id="ugZ-ki-Bql"/>
                                                 <constraint firstItem="j4D-dD-oqL" firstAttribute="top" secondItem="Auz-Lv-wCr" secondAttribute="topMargin" id="uvE-rY-fHF"/>
+                                                <constraint firstAttribute="bottom" secondItem="kIX-sk-Uce" secondAttribute="bottom" constant="5" id="w8H-MF-nf3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageScore" destination="kIX-sk-Uce" id="cWM-DW-tsd"/>
+                                            <outlet property="name" destination="OVy-tB-hX8" id="RtN-r1-tcu"/>
+                                            <outlet property="nomer" destination="j4D-dD-oqL" id="5z3-bI-ray"/>
+                                            <outlet property="score" destination="GpX-at-af9" id="0FM-Sl-fDk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -395,9 +399,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vgi-1Q-8hh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" systemItem="topRated" id="bkL-FV-STs">
+                    <tabBarItem key="tabBarItem" title="" image="icon_3" id="bkL-FV-STs">
                         <color key="badgeColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="ELa-YC-aAe" id="HH6-Tc-4FU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEf-0b-acs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,7 +490,7 @@
                                             <constraint firstAttribute="width" constant="105" id="8yd-0k-Pam"/>
                                         </constraints>
                                         <state key="normal" title="Новости">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="openNews:" destination="QEV-Rm-DTj" eventType="touchUpInside" id="FO7-bK-hIP"/>
@@ -496,7 +503,7 @@
                                             <constraint firstAttribute="width" constant="106" id="40z-Nc-RI6"/>
                                         </constraints>
                                         <state key="normal" title="Фонды">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="openFond:" destination="QEV-Rm-DTj" eventType="touchUpInside" id="uDr-7i-0Nf"/>
@@ -529,7 +536,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="396.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-w4-dZX">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-w4-dZX">
                                                     <rect key="frame" x="15" y="11" width="345" height="240"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="240" id="Ut4-qY-xuV"/>
@@ -647,7 +654,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x1b-vO-bEf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" systemItem="mostViewed" id="hqz-4o-GVG"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_1" id="hqz-4o-GVG"/>
                     <connections>
                         <outlet property="fondButton" destination="fRh-ys-buZ" id="qff-1n-aRS"/>
                         <outlet property="newsButton" destination="ncJ-BW-rM7" id="VSB-Ey-qm0"/>
@@ -895,12 +902,12 @@
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Anv-i6-73M">
                                         <rect key="frame" x="8" y="46" width="359" height="29"/>
-                                        <color key="backgroundColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <segments>
                                             <segment title="Ежемесячно"/>
                                             <segment title="Разовое"/>
                                         </segments>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDN-US-rIS">
                                         <rect key="frame" x="70" y="428" width="235" height="55"/>
@@ -913,7 +920,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите сумму" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-gz-QQp">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите сумму" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-gz-QQp">
                                         <rect key="frame" x="16" y="362" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1671,7 +1678,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="1000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i41-Zz-u6S">
                                                 <rect key="frame" x="16" y="144" width="343" height="652"/>
-                                                <mutableString key="text">Благотворительный фонд "Теплый дом" ежегодно помогает не менее 120 малоимущим семьям с детьми, оказавшимся в тяжёлой жизненной ситуации. По данным Минэкономразвития РФ и Росстата, на сегодняшний день в России за чертой бедности проживает 15,7 млн человек (то есть каждый 9-й). В большинстве своем это семьи с детьми. А 80% тех, чья бедность длится больше трех лет, становятся хроническими бедняками (по исследованиям ИС РАН). Дети в этих семьях зачастую растут в неблагополучных условиях, где есть риск насилия, алкоголизма, неполучения образования или ухода детей на улицу. По разным оценкам, в России порядка 130 000 детей каждый год остаётся без попечения родителей. При этом, например, в Санкт-Петербурге до 70% детей в детских домах и приютах имеют родителей, к которым, при определенных условиях, они могли бы вернуться.Благотворительный фонд "Теплый дом" ежегодно помогает не менее 120 малоимущим семьям с детьми, оказавшимся в тяжёлой жизненной ситуации. По данным Минэкономразвития РФ и Росстата, на сегодняшний день в России за чертой бедности проживает 15,7 млн человек (то есть каждый 9-й). В большинстве своем это семьи с детьми. А 80% тех, чья бедность длится больше трех лет, становятся хроническими бедняками (по исследованиям ИС РАН). Дети в этих семьях зачастую растут в неблагополучных условиях, где есть риск насилия, алкоголизма, неполучения образования или ухода детей на улицу. По разным оценкам, в России порядка 130 000 детей каждый год остаётся без попечения родителей. При этом, например, в Санкт-Петербурге до 70% детей в детских домах и приютах имеют родителей, к которым, при определенных условиях, они могли бы вернуться.</mutableString>
+                                                <string key="text">Благотворительный фонд "Теплый дом" ежегодно помогает не менее 120 малоимущим семьям с детьми, оказавшимся в тяжёлой жизненной ситуации. По данным Минэкономразвития РФ и Росстата, на сегодняшний день в России за чертой бедности проживает 15,7 млн человек (то есть каждый 9-й). В большинстве своем это семьи с детьми. А 80% тех, чья бедность длится больше трех лет, становятся хроническими бедняками (по исследованиям ИС РАН). Дети в этих семьях зачастую растут в неблагополучных условиях, где есть риск насилия, алкоголизма, неполучения образования или ухода детей на улицу. По разным оценкам, в России порядка 130 000 детей каждый год остаётся без попечения родителей. При этом, например, в Санкт-Петербурге до 70% детей в детских домах и приютах имеют родителей, к которым, при определенных условиях, они могли бы вернуться.Благотворительный фонд "Теплый дом" ежегодно помогает не менее 120 малоимущим семьям с детьми, оказавшимся в тяжёлой жизненной ситуации. По данным Минэкономразвития РФ и Росстата, на сегодняшний день в России за чертой бедности проживает 15,7 млн человек (то есть каждый 9-й). В большинстве своем это семьи с детьми. А 80% тех, чья бедность длится больше трех лет, становятся хроническими бедняками (по исследованиям ИС РАН). Дети в этих семьях зачастую растут в неблагополучных условиях, где есть риск насилия, алкоголизма, неполучения образования или ухода детей на улицу. По разным оценкам, в России порядка 130 000 детей каждый год остаётся без попечения родителей. При этом, например, в Санкт-Петербурге до 70% детей в детских домах и приютах имеют родителей, к которым, при определенных условиях, они могли бы вернуться.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1795,8 +1802,10 @@
     </scenes>
     <resources>
         <image name="Image" width="152" height="150"/>
-        <image name="Image-1" width="170" height="158"/>
         <image name="facebook" width="48" height="48"/>
+        <image name="icon_1" width="22" height="22"/>
+        <image name="icon_3" width="20" height="22"/>
+        <image name="icon_4" width="20" height="22"/>
         <image name="select" width="28" height="28"/>
         <image name="setting" width="116" height="102"/>
         <image name="setting-1" width="160" height="170"/>

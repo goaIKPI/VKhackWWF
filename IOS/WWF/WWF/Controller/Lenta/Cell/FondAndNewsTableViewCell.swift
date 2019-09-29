@@ -24,8 +24,8 @@ class FondAndNewsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func update(image: UIImage, name: String, description: String) {
-        self.imageFond.image = image
+    func update(image: String, name: String, description: String) {
+        self.imageFond.downloaded(from: image)
         self.nameFond.text = name
         self.descriptionFond.text = description
     }

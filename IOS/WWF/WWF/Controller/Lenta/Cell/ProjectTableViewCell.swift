@@ -32,8 +32,8 @@ class ProjectTableViewCell: UITableViewCell {
         Constant.Lenta.controller?.presentProject()
     }
     
-    func update(image: UIImage, name: String, description: String) {
-        self.imageProj.image = image
+    func update(image: String, name: String, description: String) {
+        self.imageProj.downloaded(from: image)
         self.name.text = name
         self.descriptionProj.text = description
     }
