@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/thank_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спасибо за Вашу помощь!"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline23" />
+
+    <TextView
+        android:id="@+id/thank_msg_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Вы всегда сможете узнать статус проекта во вкладкe"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/guideline24"
+        app:layout_constraintRight_toRightOf="@id/guideline25"
+        app:layout_constraintTop_toBottomOf="@id/thank_msg" />
+
+    <TextView
+        android:id="@+id/my_help_intent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Моя помощь"
+        android:textColor="#009363"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/guideline24"
+        app:layout_constraintRight_toRightOf="@id/guideline25"
+        app:layout_constraintTop_toBottomOf="@id/thank_msg_2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="334dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="44dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="44dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/first"
-        android:icon="@drawable/ic_build_black_24dp"
+        android:icon="@drawable/icon_1"
         android:title=""
         />
     <item
         android:id="@+id/second"
-        android:icon="@drawable/ic_build_black_24dp"
+        android:icon="@drawable/icon_2"
         android:title=""
         />
     <item
         android:id="@+id/third"
-        android:icon="@drawable/ic_build_black_24dp"
+        android:icon="@drawable/icon_3"
         android:title=""
         />
     <item
-        android:id="@+id/four"
-        android:icon="@drawable/ic_build_black_24dp"
-        android:title=""
-        />
-    <item
-        android:id="@+id/five"
-        android:icon="@drawable/ic_build_black_24dp"
+        android:id="@+id/fourth"
+        android:icon="@drawable/icon_4"
         android:title=""
         />
 </menu>
