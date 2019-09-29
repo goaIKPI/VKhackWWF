@@ -15,4 +15,14 @@
         <item name="android:minWidth">200dp</item>
     </style>
 
+    <style name="greenTextWhiteBack">
+        <item name="android:textColor">#009656</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="whiteTextGreenBack">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#009656</item>
+    </style>
+
 </resources>

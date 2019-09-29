@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/monthly_payed"
+        android:background="@drawable/pay_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="200dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txt_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/choose_btn_list_of_donaters"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_choose_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line">
+
+            <TextView
+                android:id="@+id/list_od_donaters_elem_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Разовое"
+                android:textColor="#009656"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/list_od_donaters_elem_2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/list_od_donaters_elem_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_choose_btn_elem"
+                android:gravity="center"
+                android:text="Ежемесячное"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/list_od_donaters_elem_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="@id/guideline26"
+            app:layout_constraintRight_toRightOf="@id/guideline27"
+            app:layout_constraintTop_toBottomOf="@id/choose_btn_list_of_donaters">
+
+            <RadioButton
+                android:id="@+id/first_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@android:color/transparent"
+                android:gravity="left|center"
+                android:text="100 руб/мес"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/second_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@android:color/transparent"
+                android:text="500 руб/мес"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/third_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@android:color/transparent"
+                android:text="1000 руб/мес"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/fourth_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@android:color/transparent"
+                android:text="2000 руб/мес"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/my_ammount_donation"
+            android:hint="Введите сумму"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_pay"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group"
+            app:layout_constraintLeft_toLeftOf="@id/guideline26"
+            app:layout_constraintRight_toRightOf="@id/guideline27"/>
+
+        <Button
+            android:id="@+id/donate_btn_monthly"
+            android:background="@drawable/shape_choose_btn_elem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="Помочь"
+            android:textColor="#ffffff"
+            app:layout_constraintTop_toBottomOf="@id/my_ammount_donation"
+            app:layout_constraintLeft_toLeftOf="@id/guideline26"
+            app:layout_constraintRight_toRightOf="@id/guideline27"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="31dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="381dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
