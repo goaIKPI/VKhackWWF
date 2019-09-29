@@ -127,7 +127,7 @@ extension LentaViewController: UITableViewDataSource {
         switch page{
         case .proj:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell") as! ProjectTableViewCell
-            cell.update(image: "https://bc86ceb8.ngrok.io/media/\(project![indexPath.row]["photo_id"]!)" , name: project![indexPath.row]["name"] as! String, description: project![indexPath.row]["name"] as! String)
+            cell.update(image: "https://bc86ceb8.ngrok.io/media/\(project![indexPath.row]["photo_id"]!)" , name: project![indexPath.row]["name"] as! String, description: project![indexPath.row]["description"] as! String)
             return cell
         case .fond:
             let cell = tableView.dequeueReusableCell(withIdentifier: "FondAndNewsCell") as! FondAndNewsTableViewCell

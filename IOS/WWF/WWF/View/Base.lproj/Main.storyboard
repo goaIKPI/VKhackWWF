@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="tintColor" red="0.0044781151227653027" green="0.58819359540939331" blue="0.33619034290313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Войти через VK">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="auth:" destination="I6T-XF-vzr" eventType="touchUpInside" id="ndO-be-6wF"/>
@@ -536,7 +536,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="396.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-w4-dZX">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-w4-dZX">
                                                     <rect key="frame" x="15" y="11" width="345" height="240"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="240" id="Ut4-qY-xuV"/>
@@ -1808,6 +1808,7 @@
     </scenes>
     <resources>
         <image name="Image" width="152" height="150"/>
+        <image name="Image-1" width="170" height="158"/>
         <image name="facebook" width="48" height="48"/>
         <image name="icon_1" width="22" height="22"/>
         <image name="icon_3" width="20" height="22"/>
@@ -1817,6 +1818,6 @@
         <image name="setting-1" width="160" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3GD-Rl-2Zi"/>
+        <segue reference="SqQ-bM-V2f"/>
     </inferredMetricsTieBreakers>
 </document>
