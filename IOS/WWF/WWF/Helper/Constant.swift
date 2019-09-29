@@ -12,6 +12,9 @@ import Foundation
 class Constant {
     enum Lenta {
         static var controller: LentaViewController?
+        static var Project: [String:Any]?
+        static var Fond: [String:Any]?
+        static var News: [String:Any]?
     }
     
     enum User {
@@ -20,5 +23,6 @@ class Constant {
     enum Project {
         static var love: [String]?
     }
+   
     
 }

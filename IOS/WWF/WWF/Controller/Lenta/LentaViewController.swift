@@ -81,9 +81,10 @@ class LentaViewController: UIViewController {
     }
     */
     
-    func presentProject() {
-        performSegue(withIdentifier: "presentProjectToLenta", sender: nil)
-    }
+//    func presentProject() {
+//
+//        performSegue(withIdentifier: "presentProjectToLenta", sender: nil)
+//    }
 
 }
 
@@ -92,10 +93,13 @@ extension LentaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch page{
         case .proj:
+            Constant.Lenta.Project = project![indexPath.row]
             performSegue(withIdentifier: "presentProjectToLenta", sender: nil)
         case .fond:
+             Constant.Lenta.Fond = fond![indexPath.row]
             performSegue(withIdentifier: "presentFondToLenta", sender: nil)
         case .news:
+            Constant.Lenta.News = news![indexPath.row]
             performSegue(withIdentifier: "presentNewsToLenta", sender: nil)
         default:
             print("error to delegate")

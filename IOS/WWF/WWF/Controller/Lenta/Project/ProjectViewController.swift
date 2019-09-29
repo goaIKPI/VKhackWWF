@@ -22,6 +22,15 @@ class ProjectViewController: UIViewController {
     @IBOutlet weak var buttonList: UIButton!
     @IBOutlet weak var buttonOpen: UIButton!
     
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var chel: UILabel!
+    @IBOutlet weak var sucProblems: UILabel!
+    @IBOutlet weak var sucProbl: UILabel!
+    
+    private var project = Constant.Lenta.Project
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bottomConstraint.constant = 500
@@ -35,6 +44,11 @@ class ProjectViewController: UIViewController {
         buttonOpen.layer.cornerRadius = 20
         buttonOpen.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         buttonOpen.clipsToBounds = true
+        print(project!["photo_id"])
+        imageView.downloaded(from: "https://bc86ceb8.ngrok.io/media/\(project!["photo_id"]!)")
+        name.text = project!["name"] as? String
+        sucProbl.text = project!["description"] as? String
+        sucProblems.text = project!["solution_description"] as? String
         // Do any additional setup after loading the view.
     }
     

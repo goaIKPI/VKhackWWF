@@ -256,11 +256,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.9575861"
+            timestampString = "591437050.2985671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -272,7 +272,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.957636"
+            timestampString = "591437050.298658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WWF/Controller/Lenta/LentaViewController.swift"
+            timestampString = "591437050.2987061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -288,11 +304,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.9576809"
+            timestampString = "591437050.29875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -304,39 +320,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.957725"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WWF/Controller/Lenta/Cell/ProjectTableViewCell.swift"
-            timestampString = "591417420.163085"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "openProject(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.9578"
+            timestampString = "591437050.29881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -352,7 +336,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.957848"
+            timestampString = "591437050.298871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -368,7 +352,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.957893"
+            timestampString = "591437050.298932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -512,11 +496,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958202"
+            timestampString = "591437050.29909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "getProject()"
             landmarkType = "7">
             <Locations>
@@ -560,11 +544,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958246"
+            timestampString = "591437050.299155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -576,11 +560,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958289"
+            timestampString = "591437050.299221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -592,11 +576,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.9583319"
+            timestampString = "591437050.2992851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -608,11 +592,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958375"
+            timestampString = "591437050.299351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -720,11 +704,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958698"
+            timestampString = "591437050.299511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -736,11 +720,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958796"
+            timestampString = "591437050.299574"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -752,11 +736,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WWF/Controller/Lenta/LentaViewController.swift"
-            timestampString = "591435865.958848"
+            timestampString = "591437050.299634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "getProject()"
             landmarkType = "7">
          </BreakpointContent>
@@ -832,7 +816,7 @@
                   moduleName = "WWF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleggerman/Documents/GitHub/VKhackWWF/IOS/WWF/WWF/Controller/LK/LKViewController.swift"
-                  timestampString = "591435157.2442501"
+                  timestampString = "591437050.813725"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -847,7 +831,7 @@
                   moduleName = "WWF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleggerman/Documents/GitHub/VKhackWWF/IOS/WWF/WWF/Controller/LK/LKViewController.swift"
-                  timestampString = "591435157.245816"
+                  timestampString = "591437050.815087"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -960,7 +944,7 @@
                   moduleName = "WWF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleggerman/Documents/GitHub/VKhackWWF/IOS/WWF/WWF/Controller/Scoreboard/ScoreboardViewController.swift"
-                  timestampString = "591435157.264971"
+                  timestampString = "591437050.8319629"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
@@ -975,7 +959,7 @@
                   moduleName = "WWF"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleggerman/Documents/GitHub/VKhackWWF/IOS/WWF/WWF/Controller/Scoreboard/ScoreboardViewController.swift"
-                  timestampString = "591435157.2663291"
+                  timestampString = "591437050.833402"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
@@ -998,6 +982,22 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "getUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WWF/Controller/Lenta/Project/ProjectViewController.swift"
+            timestampString = "591437050.29992"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -28,9 +28,9 @@ class ProjectTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func openProject(_ sender: UIButton) {
-        Constant.Lenta.controller?.presentProject()
-    }
+//    @IBAction func openProject(_ sender: UIButton) {
+//        Constant.Lenta.controller?.presentProject()
+//    }
     
     func update(image: String, name: String, description: String) {
         self.imageProj.downloaded(from: image)

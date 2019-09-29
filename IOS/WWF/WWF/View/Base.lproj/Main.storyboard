@@ -548,7 +548,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMA-jV-jOx">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMA-jV-jOx">
                                                     <rect key="frame" x="15" y="351" width="135" height="35"/>
                                                     <color key="backgroundColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -674,7 +674,7 @@
             <objects>
                 <viewController id="NHI-rT-DEr" customClass="ProjectViewController" customModule="WWF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sVb-Ba-GT9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xae-3J-Y4E">
@@ -707,7 +707,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfs-P9-fb0">
-                                <rect key="frame" x="0.0" y="70" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="1470"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzs-ED-8xy">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1178"/>
@@ -875,7 +875,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ese-DX-bxM">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="1540" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.0044781151230000003" green="0.58819359540000005" blue="0.33619034289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="b73-Gj-Xah"/>
@@ -889,7 +889,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-Qx-FjK">
-                                <rect key="frame" x="0.0" y="176" width="375" height="491"/>
+                                <rect key="frame" x="0.0" y="1709" width="375" height="491"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcQ-h4-jYG">
                                         <rect key="frame" x="152" y="8" width="71" height="30"/>
@@ -1135,7 +1135,7 @@
                             <constraint firstItem="zc4-qU-kdT" firstAttribute="trailing" secondItem="Ese-DX-bxM" secondAttribute="trailing" id="Hma-un-5E3"/>
                             <constraint firstItem="Ese-DX-bxM" firstAttribute="top" secondItem="Nfs-P9-fb0" secondAttribute="bottom" id="Hwn-45-Pwo"/>
                             <constraint firstItem="Ese-DX-bxM" firstAttribute="leading" secondItem="zc4-qU-kdT" secondAttribute="leading" id="LnZ-t5-Nrr"/>
-                            <constraint firstItem="b7q-Qx-FjK" firstAttribute="bottom" secondItem="zc4-qU-kdT" secondAttribute="bottom" id="OW5-0w-FDw"/>
+                            <constraint firstItem="b7q-Qx-FjK" firstAttribute="bottom" secondItem="zc4-qU-kdT" secondAttribute="bottom" constant="600" id="OW5-0w-FDw"/>
                             <constraint firstItem="b7q-Qx-FjK" firstAttribute="trailing" secondItem="zc4-qU-kdT" secondAttribute="trailing" id="btn-oh-Yhi"/>
                             <constraint firstItem="Nfs-P9-fb0" firstAttribute="leading" secondItem="zc4-qU-kdT" secondAttribute="leading" id="gFH-T5-aSw"/>
                             <constraint firstItem="Xae-3J-Y4E" firstAttribute="leading" secondItem="zc4-qU-kdT" secondAttribute="leading" id="igl-d8-7kI"/>
@@ -1147,6 +1147,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="v7K-Yn-3Es"/>
+                    <size key="freeformSize" width="375" height="1600"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="OW5-0w-FDw" id="fXq-yU-50k"/>
                         <outlet property="button1" destination="ew7-qE-TMu" id="gPq-za-XtF"/>
@@ -1157,8 +1158,13 @@
                         <outlet property="buttonOpen" destination="Ese-DX-bxM" id="wTp-Vq-nz0"/>
                         <outlet property="buttonPurchase" destination="TDN-US-rIS" id="Gsv-Vv-Wdg"/>
                         <outlet property="buttonfield" destination="fMC-gz-QQp" id="Ent-hq-MW2"/>
+                        <outlet property="chel" destination="7Zf-8x-vvS" id="DY3-eI-C2O"/>
+                        <outlet property="imageView" destination="QEt-sf-tEf" id="wWZ-uV-mvs"/>
+                        <outlet property="name" destination="fUa-rn-sai" id="AvQ-cv-blg"/>
                         <outlet property="progressLabel" destination="iB8-9y-qeZ" id="nJU-tc-YX9"/>
                         <outlet property="progressView" destination="MNA-wy-7Jg" id="aIK-fb-y6M"/>
+                        <outlet property="sucProbl" destination="vef-uL-KWJ" id="uy9-xA-xaG"/>
+                        <outlet property="sucProblems" destination="cvR-a0-ops" id="lh3-5h-5Wp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gJ-S5-ow9" userLabel="First Responder" sceneMemberID="firstResponder"/>
